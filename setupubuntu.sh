@@ -4,14 +4,13 @@ sudo apt remove -y --purge libreoffice* thunderbird ubuntu-web-launchers tiny-vi
 sudo apt-get clean -y
 sudo apt-get autoremove -y
 
-
 new="set -o vi \n"
 file=~/.bashrc
-sed -i "4s/$/$new/" $file
+sudo sed -i "4s/$/$new/" $file
 source $file
 
 file=/etc/apt/sources.list	
-sed -i "s/restricted/universe/g" $file
+sudo sed -i "s/restricted/universe/g" $file
 source $file
 
 sudo timedatectl set-timezone US/Eastern
