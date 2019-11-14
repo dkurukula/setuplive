@@ -18,7 +18,7 @@ gsettings set org.gnome.desktop.interface clock-format '12h'
 
 
 sudo apt update
-sudo apt install -y software-properties-common apt-transport-https git curl python3-pip vim
+sudo apt install -y software-properties-common apt-transport-https git curl python3-pip python3-venv vim
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
