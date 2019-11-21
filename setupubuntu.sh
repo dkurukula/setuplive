@@ -18,7 +18,7 @@ sudo apt update
 sudo apt install -y software-properties-common apt-transport-https git curl 
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt install nodejs
+sudo apt install nodejs yarn
 
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -30,4 +30,5 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt update
 sudo apt install code 
 
-sudo npm install -g expo-cli
+sudo yarn global add expo-cli
+#start server in project dir with sudo npx expo start
